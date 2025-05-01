@@ -1,0 +1,75 @@
+<!doctype html>
+
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>My test page</title>
+    <link href="styles/style.css" rel="stylesheet" />
+
+    <link
+    href="https://fonts.googleapis.com/css?family=Jersey+15"
+    rel="stylesheet" />
+
+  </head>
+  <body>
+<!-- character name -->
+
+    <h1>Ivy's Adventuring Shop </h1> <br>
+   
+    <img src="images/fey.png" alt="little faire guy" width=10% />
+    
+    <!-- Tab Links -->
+    <div class="tab">
+      <button class="tablinks" onclick="openCity(event, 'Yaupon')" id="defaultOpen">Yaupon</button>
+      <button class="tablinks" onclick="openCity(event, 'Orzal')">Orzal</button>
+    </div>
+
+
+
+    <!-- Table content-->
+    <div id="Yaupon" class="tabcontent">
+      <h2>Yaupon Ivy</h2>
+        
+      <p>Come for all you mid to high rank alchemical items, rings/amulets, enchantments, and armor. 
+      </p>
+
+      <h3><a href="https://docs.google.com/document/d/1dETGPtzwkgeXC3Wc872MAHogkl-XBWkseClSXqFjeL8/edit?tab=t.0">Crafting skills</a> </h3>
+      <ul>
+        <li>Does 6 die enchanting, tailoring, jewlery </li> 
+	    <li>Does 5 die channeling, smithing</li>
+	    <li>Does 4 die alchemy</li> 	
+      </ul>
+
+      <h3><a href="https://docs.google.com/document/d/1egrbiwnN4oOfd00_UJeCp9nP_frxFWD5qJ5BSDWk0CU/edit?tab=t.0">Incant pricing </a></h3>
+      <div class="indent">       
+        <p>Base Cost/50 gold per incant rank per week </p>
+        <p>(i.e. if you wanted to rent a rank 3 Luck amulet it would cost 60 gold per week 
+        <br>
+        1000(Base Cost)/50 * 3(rank) )</p>
+      </div>
+
+      <h3> <a href="https://centralia.aquest.com/admin/items_new.php">Magic item crating</a> </h3>
+      <ul>
+        <li>Custom Curses - MMC015</li>
+      </ul>
+    </div>
+    
+    <div id="Orzal" class="tabcontent">
+      <h2> Orzal </h2>
+      <h3> Rituals </h3>
+      <ul>
+        <li>Mutation Ritual</li>
+      </ul>
+    </div>
+    
+    <br>
+    <a href="https://centralia.aquest.com/doku.php">Adventure Quest website</a>
+
+    <br>
+    <button id="change">Change user</button>
+    
+
+    <script src= "scripts/main.js"></script>
+  </body>
+</html>
