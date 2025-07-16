@@ -61,10 +61,25 @@ if (!localStorage.getItem("name")) {
   myHeading.textContent = `Welcome ${storedName} to the Ivy's Adventuring Shop`;
 }
 
+// if name is minecraft it will give access to button
+if(localStorage.getItem("name").toLowerCase() === "minecraft") {
+  // Create the button element
+    const button = document.createElement('button');
+    button.innerHTML = 'Start EC2 Instance';
+    
+    // Add the onclick event handler
+    button.setAttribute('onclick', 'startInstance()');
+    
+    // Append the button to a container
+    const container = document.getElementById('container');
+    container.appendChild(button);
+}
 
+// have button that will change user name
 myButton.addEventListener("click", () => {
   setUserName();
 });
+
 
 
 function startInstance() {
