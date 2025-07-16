@@ -67,4 +67,18 @@ myButton.addEventListener("click", () => {
 });
 
 
-
+function startInstance() {
+        fetch('https://your-api-id.execute-api.region.amazonaws.com/prod/start-ec2', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        })
+        .then(response => response.json())
+        .then(data => {
+            alert('EC2 Instance started!');
+        })
+        .catch(error => {
+            alert('Error starting EC2 Instance: ' + error);
+        });
+    }
