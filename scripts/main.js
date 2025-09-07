@@ -4,6 +4,7 @@
 
 const myImage = document.querySelector("img");
 
+/*
 myImage.addEventListener("click", () => {
   const mySrc = myImage.getAttribute("src");
   if (mySrc === "images/fey.png") {
@@ -12,7 +13,7 @@ myImage.addEventListener("click", () => {
     myImage.setAttribute("src", "images/fey.png");
   }
 });
-
+*/
 function openCity(evt, cityName) {
 
     // Declare all variables
@@ -97,3 +98,4 @@ function startInstance() {
             alert('Error starting EC2 Instance: ' + error);
         });
     }
+
